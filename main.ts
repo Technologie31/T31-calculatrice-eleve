@@ -3,15 +3,6 @@ input.onButtonPressed(Button.A, function () {
     basic.showNumber(nombre1)
 })
 input.onButtonPressed(Button.AB, function () {
-    basic.showLeds(`
-        . . . . .
-        . # # # .
-        . . . . .
-        . # # # .
-        . . . . .
-        `)
-    basic.showNumber(nombre1 + nombre2)
-    basic.pause(5000)
     nombre1 = 0
     nombre2 = 0
     basic.showLeds(`
@@ -27,6 +18,15 @@ input.onButtonPressed(Button.B, function () {
     basic.showNumber(nombre2)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    basic.showLeds(`
+        . . . . .
+        . # # # .
+        . . . . .
+        . # # # .
+        . . . . .
+        `)
+    basic.showNumber(nombre1 + nombre2)
+    basic.pause(500)
     nombre1 = 0
     nombre2 = 0
     basic.showLeds(`
